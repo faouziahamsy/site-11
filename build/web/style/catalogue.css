@@ -110,7 +110,7 @@ body{
   font-weight: 400;
 }
 .content .row .price{
-  color: #ff7979;
+  color: #2c3e50;
   font-size: 25px;
   font-weight: 600;
 }
@@ -125,7 +125,7 @@ body{
   font-size: 17px;
   font-weight: 500;
   border-radius: 3px;
-  border: 2px solid #ff7979;
+  border: 2px solid #2c3e50;
   text-transform: uppercase;
   transition: all 0.3s ease;
 }
@@ -141,9 +141,9 @@ button:first-child:hover{
 .buttons button:last-child{
   color: #fff;
   margin-left: 10px;
-  background: #ff7979;
+  background: #2c3e50;
 }
 button:last-child:hover{
-  background: #ff6666;
-  border-color: #ff6666;
+  background: #2c3e50;
+  border-color: #2c3e50;
 }

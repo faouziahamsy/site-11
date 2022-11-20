@@ -42,7 +42,6 @@
               <li><a href="#"></a></li>
             </ul>
           </li>
-          <li><a href="">Panier </a></li>
           <li><a href="Login.jsp">Se connecter </a></li>
           
          

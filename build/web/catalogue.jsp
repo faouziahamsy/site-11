@@ -27,18 +27,17 @@
         <div class="item-count">0</div>
       </div>
       <div class="card">
-        <img src="" alt="">
+        <img src="images/img1.jpg" alt="">
         <div class="content">
           <div class="row">
             <div class="details">
-              <span>Headphone</span>
-              <p>Premium headphone</p>
+              <span>nom</span>
+              <p>description</p>
             </div>
-            <div class="price">$30</div>
+            <div class="price">3</div>
           </div>
           <div class="buttons">
-            <button>Buy Now</button>
-            <button class="cart-btn">Add to Cart</button>
+            <button class="cart-btn">Ajouter au panier</button>
           </div>
         </div>
       </div>
@@ -47,14 +46,13 @@
         <div class="content">
           <div class="row">
             <div class="details">
-              <span>Apple Watch</span>
-              <p>Premium digital watch</p>
+              <span>nom</span>
+              <p>description</p>
             </div>
-            <div class="price">$80</div>
+            <div class="price">8</div>
           </div>
           <div class="buttons">
-            <button>Buy Now</button>
-            <button class="cart-btn">Add to Cart</button>
+            <button class="cart-btn">Ajouter au panier</button>
           </div>
         </div>
       </div>
@@ -63,19 +61,17 @@
         <div class="content">
           <div class="row">
             <div class="details">
-              <span>Apple Airpod</span>
-              <p>Premium black airpod</p>
+              <span>nam</span>
+              <p>description</p>
             </div>
-            <div class="price">$50</div>
+            <div class="price">5</div>
           </div>
           <div class="buttons">
-            <button>Buy Now</button>
-            <button class="cart-btn">Add to Cart</button>
+            <button class="cart-btn">Ajouter au panier</button>
           </div>
         </div>
       </div>
     </div>
-
     <script src="script.js"></script>
 
   </body>
