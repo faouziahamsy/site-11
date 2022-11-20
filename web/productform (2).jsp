@@ -6,6 +6,7 @@
       <link href="style/forms.css" rel="stylesheet" type="text/css"/>
       <link href="style/uploadimage.css" rel="stylesheet" type="text/css"/>
       <script src="script/script.js" type="text/javascript"></script>
+      <script src="script/categorie.js" type="text/javascript"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
    <body>
@@ -103,7 +104,7 @@
                 <div class="underline"></div>
                 <label for="">Marque:</label>                    
                     <div style="width:200px; ">
-                        <select id="marques" onchange="myFunction(this)" name="marques" ></select> 
+                        <select id="marques" name="marques" ></select> 
                     </div>
                 </div>
                 
