@@ -27,7 +27,7 @@
         <div class="item-count">0</div>
       </div>
       <div class="card">
-        <img src="images/img1.jpg" alt="">
+        <img src="" alt="">
         <div class="content">
           <div class="row">
             <div class="details">
