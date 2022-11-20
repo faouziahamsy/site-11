@@ -72,9 +72,17 @@ public void init(){
           case "listMarques"  :listMarques(request,response); 
           break;
           case "deleteMarque" : deleteMarque(request,response);
+          break;
+          case "listCategories"  :listCategories(request,response); 
+          break;
+          case "deleteCategorie" : deleteCategorie(request,response);
+          break;
+          case "listProduits"  :listProduits(request,response); 
+          break;
+          case "deleteProduit" : deleteProduit(request,response);
+          break; 
           default : FormProduit(request,response);
-          break;           
-              
+          break;                    
           }
     }
     
@@ -152,5 +160,27 @@ public void init(){
          listMarques(request,response);
     }
 
-  
+    private void listProduits(HttpServletRequest request, HttpServletResponse response) throws IOException {
+            response.setContentType("application/json");
+        Gson gson = new Gson();
+        response.getWriter().write(gson.toJson(produitServices.findAllProduits()));
+    }
+
+    private void deleteProduit(HttpServletRequest request, HttpServletResponse response)throws IOException {
+         try{
+            int id = Integer.parseInt(request.getParameter("id"));
+            produitServices.deleteProduit(produitServices.findProduitById(id));
+            }catch(NumberFormatException e){          
+       }
+         listProduits(request, response);
+    }
+
+    private void listCategories(HttpServletRequest request, HttpServletResponse response) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void deleteCategorie(HttpServletRequest request, HttpServletResponse response) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
