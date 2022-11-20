@@ -5,7 +5,7 @@
  */
 $(document).ready(function () {
     $.ajax({
-        url: "listproduits",
+        url: "/admin/listproduits",
         success: function (data, textStatus, jqXHR) {
             remplir(data);
         },
