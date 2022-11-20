@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Admin- Gestion des catégories</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="style/forms.css" rel="stylesheet" type="text/css"/>
+   </head>
+   <body>
+    <div class="container">
+        <div class="text">Ajouter une sous-catégorie</div>
+        <form action="#">
+
+           <div class="form-row">
+              <div class="input-data">
+                 <input type="text" required>
+                 <div class="underline"></div>
+                 <label for="">Nom de la sous-catégorie:</label>
+              </div>   
+           </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <div class="custom-select" style="width:200px;">
+                        <select id="categories" name="categories"></select> 
+                    </div>
+                 <div class="underline"></div>
+                 <label for="">Catégorie:</label>
+                 </div>
+           </div>         
+           
+            <div class="form-row submit-btn">
+                <div class="input-data">
+                    <div class="inner"></div>
+                    <input type="submit" value="Ajouter la sous catégorie">
+                </div>
+            </div>
+        </form>
+     </div>
+   </body>
+</html>
