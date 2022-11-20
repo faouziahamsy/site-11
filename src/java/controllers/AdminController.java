@@ -175,12 +175,19 @@ public void init(){
          listProduits(request, response);
     }
 
-    private void listCategories(HttpServletRequest request, HttpServletResponse response) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    private void listCategories(HttpServletRequest request, HttpServletResponse response) throws IOException {
+       response.setContentType("application/json");
+        Gson gson = new Gson();
+        response.getWriter().write(gson.toJson(categorieServices.listCategories()));
     }
-
-    private void deleteCategorie(HttpServletRequest request, HttpServletResponse response) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    
+    private void deleteCategorie(HttpServletRequest request, HttpServletResponse response) throws IOException {
+          try{
+            int id = Integer.parseInt(request.getParameter("id"));
+            categorieServices.deleteCategorie(categorieServices.findCategorieById(id));
+            }catch(NumberFormatException e){          
+       }
+         listCategories(request, response);
     }
 
 }
