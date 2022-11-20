@@ -43,8 +43,7 @@ public void init (){
         String email = request.getParameter("email");
         String telephone = request.getParameter("telephone");
         String adresse = request.getParameter("adresse");
-        String password = request.getParameter("password");
-        
+        String password = request.getParameter("password");    
       //  Client client = new Client();
       ////  client.setNom(nom);
       //  client.setEmail(email);
@@ -73,7 +72,6 @@ public void init (){
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.sendRedirect("registration.jsp");
-     
     }
 
     /**
