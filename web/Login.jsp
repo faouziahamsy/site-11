@@ -1,34 +1,49 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
- pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-<link rel="stylesheet"
- href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
- integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
- crossorigin="anonymous">
-<link href="css/login.css" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+<%-- 
+    Document   : Login
+    Created on : 16 nov. 2022, 20:28:41
+    Author     : DELL
+--%>
 
- <div class="container col-md-8 col-md-offset-3" style="overflow: auto">
-      <div class="text"> Se connecter</div>
-       <form method="post" action="<%=request.getContextPath()%>/Login">
-   <div class="form-group">
-    <label for="uname">Email:</label> <input type="text"
-     class="form-control" id="email" placeholder="nom@gmail.com"
-     name="email" required>
-   </div>
-   <div class="form-group">
-    <label for="uname">Mot de passe:</label> <input type="password"
-     class="form-control" id="password" placeholder="Mot de passe "
-     name="password" required>
-   </div>
-   <button type="submit" class="btn btn-primary">Se connecter </button>
-   <div class="signup-link">  nouveau membre? <a href="registration.jsp">S'inscrire</a>  </div>    
-  </form>
- </div>
-</body>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Login</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link href="style/login.css" rel="stylesheet" type="text/css"/>
+   </head>
+   <body>
+      <div class="center">       
+         <div class="container">
+            <label for="" class="close-btn fas fa-times" title="close"></label>
+            <div class="text">
+               Se connecter
+            </div>
+             <form method="post" action="<%=request.getContextPath()%>/Login">
+           
+               <div class="data">
+                  <label for ="uname">Email </label>
+                  <input  type="text" id="email" name="email" required  placeholder="nom@gmail.com">
+               </div>
+               <div class="data">
+                  <label for ="uname">Mot de passe</label>
+                  <input type="password" id="password" name="password" required placeholder="mot de passe">
+               </div>
+               <div class="forgot-pass">
+                  <a href="emailverification.jsp">Mot de passe oublié</a>
+               </div>
+               <div class="btn">
+                  <div class="inner"></div>
+                  <button type="submit">Se connecter</button>
+               </div>
+               <div class="signup-link">
+                  nouveau membre? <a href="registration.jsp">S'inscrire</a>
+               </div>
+            </form>
+         </div>
+      </div>
+   </body>
 </html>

@@ -5,6 +5,7 @@
  */
 package controllers;
 
+import com.google.gson.Gson;
 import entities.Categorie;
 import entities.Marque;
 import entities.Produit;
@@ -66,6 +67,8 @@ public void init(){
           case "AddMarque"  :AddMarque(request,response); 
           break;  
           case "produits"  :getProduit(request,response); 
+          break;
+          case "listMarques"  :listMarques(request,response); 
           break;
           default : FormProduit(request,response);
           break;           
@@ -129,6 +132,13 @@ public void init(){
         if(marqueServices.AddMarque(new Marque(marque))){
             response.getWriter().append("Marque bien ajouté");
         }
+    }
+
+    private void listMarques(HttpServletRequest request, HttpServletResponse response) throws IOException {
+         response.setContentType("application/json");
+        Gson gson = new Gson();
+        response.getWriter().write(gson.toJson(marqueServices.findMarques()));
+       
     }
 
   
