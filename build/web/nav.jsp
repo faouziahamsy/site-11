@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-  <div class="wrapper">
+  <div class="wrap">
     <nav>
       <input type="checkbox" id="show-search">
       <input type="checkbox" id="show-menu">
@@ -29,8 +29,8 @@
             <input type="checkbox" id="categorie">
             <label for="categorie">Catégories</label>
             <ul>
-              <li><a href="#">font de teint</a></li>
-              <li><a href="#">Rouges a levres</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
             </ul>
           </li>
           <li>
@@ -38,8 +38,8 @@
             <input type="checkbox" id="marques">
             <label for="marques">Marques</label>
             <ul>
-              <li><a href="#">Maybelline</a></li>
-              <li><a href="#">Essence</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
             </ul>
           </li>
           <li><a href="">Panier </a></li>

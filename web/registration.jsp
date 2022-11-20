@@ -19,52 +19,43 @@
        <form action="<%=request.getContextPath()%>/register" method="post">
            <div class="form-row">
               <div class="input-data"> 
+                  <input type="text"class="form-control" id="uname" name="nom" required>
                  <div class="underline"></div>
                  <label for="">Nom</label>
-                  <input type="text"class="form-control" id="uname" name="nom" required>
+                  
               </div>
               <div class="input-data">
-                
+                <input type="text" class="form-control" id="username" name="email" required>
                  <div class="underline"></div>
                  <label for="">Email</label>
-                 <input type="text"
-        class="form-control" id="username"
-        name="email" required>
+                 
               </div>
            </div>
            <div class="form-row">
               <div class="input-data">
+                  <input type="text" class="form-control" id="uname" name="prenom" required>
                  <div class="underline"></div>
                  <label for="">Prenom </label>
-                 <input type="text"
-        class="form-control" id="uname" 
-        name="prenom" required>
+                 
               </div>
                 <div class="input-data">
+                    <input type="text" class="form-control" id="uname" name="telephone" required>
                  <div class="underline"></div>
                  <label for="">Telephone </label>
-                 <input type="text"
-        class="form-control" id="uname" 
-        name="telephone" required>
+                 
               </div>
               <div class="input-data">
-                 <div class="underline"></div>
-                 <label for="">Mot de passe</label>
-                 <input type="password"
-        class="form-control" id="password" 
-        name="password" required>
+                  <input type="password"class="form-control" id="password" name="password" required>
+                 <div class="underline"></div>                 
+                 <label for="">Mot de passe</label>               
               </div>
            </div>
-           <div class="form-row">
-              <div class="input-data">
-                
+           <div class="form-row">              
+              <div class="input-data">  
+                  <input type="text" class="form-control" id="uname" name="adresse" required>
                  <div class="underline"></div>
-                 <label for="">Adresse </label>
-                 <input type="text"
-        class="form-control" id="uname" 
-        name="adresse" required>
-              </div>
-            
+                 <label for="">Adresse </label>                
+              </div>            
            </div>
                  <br />
                  <div class="form-row submit-btn">

@@ -17,11 +17,12 @@
     <script src="script/catalogue.js" type="text/javascript"></script> 
   </head>
   <body>
+    <%@include file="nav.jsp" %>
     <div class="wrapper">
       <div class="cart-nav">
         <div class="icon">
           <i class="fas fa-shopping-cart"></i>
-          <span>Cart</span>
+          <span>Panier</span>
         </div>
         <div class="item-count">0</div>
       </div>

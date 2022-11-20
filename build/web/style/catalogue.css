@@ -24,7 +24,7 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #ff7979;
+  background: #f2f2f2;
   padding: 0 20px;
 }
 .wrapper{
@@ -48,7 +48,7 @@ body{
   box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.15);
 }
 .cart-nav .icon{
-  color: #ff7979;
+  color: #2c3e50;
 }
 .cart-nav .icon i{
   font-size: 20px;
@@ -60,11 +60,11 @@ body{
   font-size: 15px;
   height: 23px;
   width: 23px;
-  color: #ff7979;
-  background: #ffcccc;
+  color: #2c3e50;
+  background: #f2f2f2;
   text-align: center;
   line-height: 22px;
-  border: 1px solid #ffb3b3;
+  border: 1px solid #2c3e50;
   border-radius: 50%;
 }
 .wrapper .card{

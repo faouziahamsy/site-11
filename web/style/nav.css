@@ -15,12 +15,12 @@ and open the template in the editor.
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
-.wrapper{
+.wrap{
   background: #2c3e50;
   position: fixed;
   width: 100%;
 }
-.wrapper nav{
+.wrap nav{
   position: relative;
   display: flex;
   max-width: calc(100% - 200px);
@@ -62,8 +62,8 @@ nav .content .links{
 .content .links li label:hover{
   background: #323c4e;
 }
-.wrapper .search-icon,
-.wrapper .menu-icon{
+.wrap .search-icon,
+.wrap .menu-icon{
   color: #fff;
   font-size: 18px;
   cursor: pointer;
@@ -71,14 +71,14 @@ nav .content .links{
   width: 70px;
   text-align: center;
 }
-.wrapper .menu-icon{
+.wrap .menu-icon{
   display: none;
 }
-.wrapper #show-search:checked ~ .search-icon i::before{
+.wrap #show-search:checked ~ .search-icon i::before{
   content: "\f00d";
 }
 
-.wrapper .search-box{
+.wrap .search-box{
   position: absolute;
   height: 100%;
   max-width: calc(100% - 50px);
@@ -87,7 +87,7 @@ nav .content .links{
   pointer-events: none;
   transition: all 0.3s ease;
 }
-.wrapper #show-search:checked ~ .search-box{
+.wrap #show-search:checked ~ .search-box{
   opacity: 1;
   pointer-events: auto;
 }
@@ -118,7 +118,7 @@ nav .content .links{
   font-size: 20px;
   cursor: pointer;
 }
-.wrapper input[type="checkbox"]{
+.wrap input[type="checkbox"]{
   display: none;
 }
 
@@ -157,7 +157,7 @@ nav .content .links{
 
 /* Responsive code start */
 @media screen and (max-width: 1250px){
-  .wrapper nav{
+  .wrap nav{
     max-width: 100%;
     padding: 0 20px;
   }
@@ -167,19 +167,19 @@ nav .content .links{
   .content .links li a{
     padding: 8px 13px;
   }
-  .wrapper .search-box{
+  .wrap .search-box{
     max-width: calc(100% - 100px);
   }
-  .wrapper .search-box input{
+  .wrap .search-box input{
     padding: 0 100px 0 15px;
   }
 }
 
 @media screen and (max-width: 900px){
-  .wrapper .menu-icon{
+  .wrap .menu-icon{
     display: block;
   }
-  .wrapper #show-menu:checked ~ .menu-icon i::before{
+  .wrap #show-menu:checked ~ .menu-icon i::before{
     content: "\f00d";
   }
   nav .content .links{
@@ -241,20 +241,20 @@ nav .content .links{
 }
 
 @media screen and (max-width: 400px){
-  .wrapper nav{
+  .wrap nav{
     padding: 0 10px;
   }
   .content .logo a{
     font-size: 27px;
   }
-  .wrapper .search-box{
+  .wrap .search-box{
     max-width: calc(100% - 70px);
   }
-  .wrapper .search-box .go-icon{
+  .wrap .search-box .go-icon{
     width: 30px;
     right: 0;
   }
-  .wrapper .search-box input{
+  .wrap .search-box input{
     padding-right: 30px;
   }
 }
