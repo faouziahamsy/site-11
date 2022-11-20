@@ -2,17 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/DELL/Documents/NetBeansProject/projetjavatest/src/java/controllers/AdminController.java</file>
-            <file>file:/C:/Users/DELL/Documents/NetBeansProject/projetjavatest/src/java/controllers/AppController.java</file>
-            <file>file:/C:/Users/DELL/Documents/NetBeansProject/projetjavatest/src/java/controllers/ClientController.java</file>
-            <file>file:/C:/Users/DELL/Documents/NetBeansProject/projetjavatest/src/java/controllers/ProduitController.java</file>
-            <file>file:/C:/Users/DELL/Documents/NetBeansProject/projetjavatest/src/java/services/ProduitServices.java</file>
-            <file>file:/C:/Users/DELL/Documents/NetBeansProject/projetjavatest/web/register-success.jsp</file>
-            <file>file:/C:/Users/DELL/Documents/NetBeansProject/projetjavatest/web/register.jsp</file>
-            <file>file:/C:/Users/DELL/Documents/NetBeansProject/projetjavatest/web/productform.jsp</file>
-            <file>file:/C:/Users/DELL/Documents/NetBeansProject/projetjavatest/src/java/controllers/CategorieController.java</file>
-            <file>file:/C:/Users/DELL/Documents/NetBeansProject/projetjavatest/src/java/services/MarqueServices.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
