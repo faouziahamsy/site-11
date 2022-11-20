@@ -56,18 +56,15 @@ public void init (){
     }
     protected void getProduits(HttpServletRequest request, HttpServletResponse response)
               throws ServletException, IOException {
-        
         List<Produit> produits = produitServices.findAllProduits();
         request.setAttribute("produits", produits);
         for(Produit produit : produits){
-            response.getWriter().append( produit.getNom());
-        
+         response.getWriter().append( produit.getNom());   
         }
         //RequestDispatcher dispatcher = request.getRequestDispatcher("register-success.jsp");
          //dispatcher.forward(request, response);
     }
    
-    
        protected void AjouterProduit(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
