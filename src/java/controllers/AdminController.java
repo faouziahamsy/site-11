@@ -30,6 +30,7 @@ import services.ProduitServices;
 @WebServlet("/admin/*")
 public class AdminController extends HttpServlet {
     private ProduitServices produitServices;
+    private Marque marque;
     private MarqueServices marqueServices;
     private CategorieServices categorieServices;
 public void init(){
@@ -70,6 +71,7 @@ public void init(){
           break;
           case "listMarques"  :listMarques(request,response); 
           break;
+          case "deleteMarque" : deleteMarque(request,response);
           default : FormProduit(request,response);
           break;           
               
@@ -139,6 +141,15 @@ public void init(){
         Gson gson = new Gson();
         response.getWriter().write(gson.toJson(marqueServices.findMarques()));
        
+    }
+
+    private void deleteMarque(HttpServletRequest request, HttpServletResponse response) throws IOException {
+         try{
+            int id = Integer.parseInt(request.getParameter("id"));
+       marqueServices.deleteMarque(marqueServices.findMarqueById(id));
+       }catch(NumberFormatException e){          
+       }
+         listMarques(request,response);
     }
 
   
